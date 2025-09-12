@@ -113,6 +113,7 @@ body {
 
 /* Hero section - Versión completamente centrada y mejorada(seccion inicial) */
 .hero {
+    position: relative;
     height: 100vh;
     min-height: 600px; /* Altura mínima para evitar compresión */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -193,16 +194,20 @@ body {
 .hero-scroll {
     position: absolute;
     bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0; /* Cambiado de left: 50% */
+    right: 0; /* Aseguramos que ocupe todo el ancho */
+    transform: none; /* Eliminamos el transform */
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     color: var(--white);
     opacity: 0.7;
     font-size: 0.9rem;
-    animation: fadeIn 1s ease-out 1s; /* Aparece después */
+    animation: fadeIn 1s ease-out 1s;
     animation-fill-mode: both;
+    width: 100%; /* Aseguramos que ocupe el ancho completo */
+    margin: 0 auto; /* Centrado horizontal */
 }
 
 .scroll-line {
@@ -212,7 +217,6 @@ body {
     margin-top: 10px;
     animation: scrollAnimation 2s infinite;
 }
-
 
 @keyframes scrollAnimation {
     0% { transform: translateY(0); opacity: 0; }
@@ -805,4 +809,46 @@ body {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+
+/* Añade esto al final de tu CSS */
+
+/* Corrección para la franja blanca en móviles */
+.hero {
+    height: 100vh;
+    height: 100dvh; /* Nueva unidad que considera la UI del navegador móvil */
+    min-height: -webkit-fill-available; /* Para navegadores WebKit */
+}
+
+/* Asegurar que el body no tenga márgenes ocultos */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Corrección adicional para elementos que podrían desbordar */
+.floating-nav {
+    max-width: 95%;
+}
+
+/* Mejora en responsive para móviles muy pequeños */
+@media (max-width: 400px) {
+    .hero {
+        padding: 10px;
+    }
+    
+    .hero-content {
+        padding: 0 10px;
+    }
+    
+    .services, .about, .contact {
+        padding: 60px 20px;
+    }
+}
+
+/* Asegurar que las imágenes no desborden */
+img {
+    max-width: 100%;
+    height: auto;
 }
