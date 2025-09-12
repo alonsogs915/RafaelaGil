@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psic. Rafaela Gil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+
+    <!-- Nav flotante -->
+    <nav class="floating-nav">
+        <a href="#inicio" class="nav-logo">Psic. Rafaela Gil</a>
+        <div class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <button class="menu-btn"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- Hero con efecto parallax -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Bienestar emocional <span>para tu vida plena</span></h1>
+                <p data-aos="fade-up" data-aos-delay="100">Terapia personalizada para superar ansiedad, estrés y mejorar tus relaciones.</p>
+                <a href="#contacto" class="btn-hero" data-aos="fade-up" data-aos-delay="200">Agendar consulta</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarjetas de servicios con hover 3D -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 data-aos="fade-up">Cómo puedo ayudarte</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="50">Enfoque humanista con técnicas científicamente validadas</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Terapia Para Adolecentes y Jóvenes</h3>
+                    <p>Sesiones personalizadas para trabajar en tu crecimiento emocional y autoconocimiento.</p>
+                    <ul>
+                        <li>Ansiedad y estrés</li>
+                        <li>Autoestima</li>
+                        <li>Duelo</li>
+                        <li>Bullying</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Terapia Para Personas Adultas</h3>
+                    <p>Procesos de crecimiento personal, autocuidado, limites y exploración del dialogo interno.</p>
+                    <ul>
+                        <li>Conflictos</li>
+                        <li>Estres laboral</li>
+                        <li>Relaciones</li>
+                        <li>Divorcio</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Terapia Familiar</h3>
+                    <p>Armoniza las dinámicas familiares y mejora la convivencia.</p>
+                    <ul>
+                        <li>Conflictos padres-hijos</li>
+                        <li>Límites saludables</li>
+                        <li>Familias reconstituidas</li>
+                        <li>Apoyo desde el paradigma de la neurodiversidad</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Talleres y espacios grupales</h3>
+                    <p>Espacios orientados al desarrollo grupal y la interacción entre participantes.</p>
+                    <ul>
+                        <li>Colaboración</li>
+                        <li>Interacción Social</li>
+                        <li>Crecimiento Personal y Grupal</li>
+                        <li>Ambiente Seguro</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí con efecto de revelado -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="Rafa1.jpeg" alt="Psic. Valeria Soto">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2>Sobre mí</h2>
+                    <p class="intro">Soy <strong>Psic. Rafaela Gil</strong>, especialista con formación humanista y enfoque neuroafirmativo.</p>
+                    <p>Atiendo a niños desde los 10 años, adolecentes y adultos.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-award"></i>
+                            <span>Diplomada en Condición del espectro autista</span>
+                        </div>
+
+                    </div>
+                    <a href="#contacto" class="btn-about">Conoce mi método</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios con carrusel -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 data-aos="fade-up">Lo que dicen mis pacientes</h2>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="50">Experiencias reales de transformación</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Gracias a la terapia he aprendido a sanar poco a poco esas heridas que sufrí por discriminaion e ignorancia de los demás, gracias a la terapia me he perdonado por hacerme daño tratando de ser igual que ellos."</p>
+                    <div class="client-info">
+                        <div class="anonymous-avatar">
+                            <i class="fas fa-user"></i> <!-- Icono de usuario genérico -->
+                        </div>
+                        <div>
+                            <h4>Katherine, 34 años.</h4>
+                            <span>Diagnóstico: Trastornos del espectro autista</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Rafaela me ofreció un espacio amable, de confianza y por sobretodo humano. Con el tiempo en conjuntos fuimos llenándolo de magia y acogiendo mis dolores, miedos y frustraciones con mucho respeto y a mi ritmo."</p>
+                    <div class="client-info">
+                        <div class="anonymous-avatar">
+                            <i class="fas fa-user"></i> <!-- Icono de usuario genérico -->
+                        </div>
+                        <div>
+                            <h4>M. A, 37 años </h4>
+                            <span>Autoconocimiento</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"La terapia con Rafaela fue una experiencia enriquecedora y efectiva. Su guia amorosa nos permitio superar la pena y hablar un lenguaje común con mi hija."</p>
+                    <div class="client-info">
+                        <div class="anonymous-avatar">
+                            <i class="fas fa-user"></i> <!-- Icono de usuario genérico -->
+                        </div>
+                        <div>
+                            <h4>Carmen gloria</h4>
+                            <span>Duelo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Con las sesiones, me ayudó a entender qué era lo que me estaba pasando y por qué me sentía asi, me dio métodos súper prácticos para controlar los ataques de pánico y, con el tiempo empecé a ganar mas confianza en mí mismo."</p>
+                    <div class="client-info">
+                        <div class="anonymous-avatar">
+                            <i class="fas fa-user"></i> <!-- Icono de usuario genérico -->
+                        </div>
+                        <div>
+                            <h4>Joaquín, 14 años</h4>
+                            <span>Crecimiento emocional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-nav">
+                    <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots"></div>
+                    <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto con mapa interactivo -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Contacto</h2>
+                    <p>Agenda tu primera consulta o resuelve tus dudas:</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Consultorio</h3>
+                            <span>El Hualle 8048, La Florida.</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <span>+56966885201</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <span>rafa.gilvalles@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/tentepaciencia?igsh=aTQxbXVjbzhqb3U3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/56966885201"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                <form action="https://formspree.io/f/meoldljj" method="POST">
+                    <div class="form-group">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                    <textarea name="message" placeholder="¿Cómo puedo ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-form">
+                    Enviar mensaje <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con wave animation -->
+    <footer>
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-logo">Psic. Rafaela Gil</div>
+                <p>Terapia psicológica con enfoque humanista y científico</p>
+                <div class="footer-links">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <div class="copyright">© 2025 Todos los derechos reservados</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Animaciones al hacer scroll
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Cursor personalizado
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+
+        // Carrusel de testimonios
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dotsContainer = document.querySelector('.testimonial-dots');
+        let currentIndex = 0;
+
+        // Crear puntos de navegación
+        testimonials.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => showTestimonial(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            testimonials[index].classList.add('active');
+            
+            const dots = document.querySelectorAll('.dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+            
+            currentIndex = index;
+        }
+
+        document.querySelector('.next-testimonial').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % testimonials.length;
+            showTestimonial(currentIndex);
+        });
+
+        document.querySelector('.prev-testimonial').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentIndex);
+        });
+    </script>
+</body>
+</html>
