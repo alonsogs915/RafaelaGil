@@ -852,3 +852,76 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Menú móvil */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    z-index: 1001;
+}
+
+.mobile-menu.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+}
+
+.mobile-menu a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: var(--primary);
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Asegurar que el botón de menú se vea en móviles */
+@media (max-width: 992px) {
+    .menu-btn {
+        display: block;
+        z-index: 1002;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    /* Ajustar el nav para móviles */
+    .floating-nav {
+        padding: 12px 20px;
+    }
+}
+
+/* Para evitar que el contenido se desplace cuando el menú está abierto */
+body.no-scroll {
+    overflow: hidden;
+}

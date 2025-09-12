@@ -24,6 +24,14 @@
             <a href="#contacto">Contacto</a>
         </div>
         <button class="menu-btn"><i class="fas fa-bars"></i></button>
+        
+        <!-- Añade este div para el menú móvil -->
+        <div class="mobile-menu">
+            <a href="#servicios">Servicios</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
+        </div>
     </nav>
 
     <!-- Hero con efecto parallax -->
@@ -291,6 +299,56 @@
     </footer>
 
     <!-- Scripts -->
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const body = document.body;
+        
+        menuBtn.addEventListener('click', function() {
+            // Alternar la clase active en el menú móvil
+            mobileMenu.classList.toggle('active');
+            
+            // Cambiar el icono de hamburguesa a X y viceversa
+            const icon = menuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                body.classList.add('no-scroll');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                body.classList.remove('no-scroll');
+            }
+        });
+        
+        // Cerrar el menú al hacer clic en un enlace
+        const menuLinks = document.querySelectorAll('.mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                body.classList.remove('no-scroll');
+            });
+        });
+        
+        // Cerrar el menú al hacer clic fuera de él
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.floating-nav') && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                body.classList.remove('no-scroll');
+            }
+        });
+    });
+    </script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Animaciones al hacer scroll
