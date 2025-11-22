@@ -1,0 +1,1 @@
+Sitio web estático desarrollado como página de aterrizaje principal para una consulta psicológica. Presenta de manera clara y estructurada los servicios terapéuticos, metodología de trabajo y información profesional, diseñado para generar confianza y facilitar el contacto con potenciales pacientes.
